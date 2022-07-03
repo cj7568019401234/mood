@@ -202,12 +202,12 @@ class _TableRowState extends State<TableRow> {
           Positioned(
               bottom: 4,
               child: Container(
-                height: 33,
-                width: 33,
+                height: 34,
+                width: 34,
                 alignment: Alignment.center,
                 child: AnimatedContainer(
-                    height: widget.isVisible ? 33 : 0, // 动画第一步：圆脸动画
-                    width:  widget.isVisible ? 33 : 0,
+                    height: widget.isVisible ? 34 : 0, // 动画第一步：圆脸动画
+                    width:  widget.isVisible ? 34 : 0,
                     duration: const Duration(milliseconds: 400),
                     child: Image(image: AssetImage(getImagePath()))
                 ),
@@ -238,8 +238,8 @@ class _TableRowState extends State<TableRow> {
                     });
                   },
                   child: AnimatedContainer(
-                    height: animationStep >= 0 ? getHeight() : 64,// 动画第二步：高度动画
-                    width: widget.isSelected ? 70 : 64,
+                    height: animationStep >= 0 ? getHeight() : 42,// 动画第二步：高度动画
+                    width: widget.isSelected ? 58 : 52,
                     onEnd: () {
                       setState(() {
                         if (animationStep >= 2) return;

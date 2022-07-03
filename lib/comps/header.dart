@@ -41,12 +41,12 @@ class _MyHeaderState extends State<MyHeader> {
         opacity: isVisible ? 1.0 : 0.0,
         duration: const Duration(milliseconds: 800),
         child: Container(
-            margin: const EdgeInsets.only(top: 18.0, left: 12, right: 12), //内边距
+            margin: const EdgeInsets.only(top: 18.0, left: 12, right: 12),
             padding: const EdgeInsets.only(top: 44.0, bottom: 34),
             child: Column(children: [
               Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                 Container(
-                  margin: const EdgeInsets.only(right: 10.0), //内边距
+                  margin: const EdgeInsets.only(right: 10.0),
                   height: 36,
                   width: 36,
                   decoration: const BoxDecoration(
@@ -95,12 +95,8 @@ class _MyHeaderState extends State<MyHeader> {
                   BoxShadow(
                       offset: Offset(0.0, -6.0),
                       color: Color.fromRGBO(0, 0, 0, 0.15),
-                      blurRadius: 16, //阴影模糊程度
-                      spreadRadius: -6 //阴影扩散程度
-                      )
-                ]
-            )
-        )
-    );
+                      blurRadius: 16,
+                      spreadRadius: -6)
+                ])));
   }
 }
